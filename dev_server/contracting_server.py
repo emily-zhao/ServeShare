@@ -10,6 +10,10 @@ with open('../contracts/example_token.py') as f:
     code = f.read()
     client.submit(code, name='my_token')
 
+with open('../contracts/resource_contract.py') as f:
+    code = f.read()
+    client.submit(code, name='resource_contract')
+
 app = Sanic("contracting server")
 CORS(app)
 @app.route("/ping")

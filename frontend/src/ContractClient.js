@@ -4,8 +4,8 @@ const URL = "http://0.0.0.0:3737/"
 
 export default class ContractClient{
 
-    constructor(){
-    
+    constructor(sender){
+        this.sender = sender;
     }
     
     getAllContracts(){
@@ -20,12 +20,12 @@ export default class ContractClient{
         return this._clientGet(`contracts/${contract}/${variable}?key=${key}`);
     }
     
-    runTransAction(contract, method, args, sender){
+    runTransaction(contract, method, args){
         return this._clientPost({
             'contract': contract,
             'method': method,
             'args': args,
-            'sender': sender
+            'sender': this.sender
         });
     }
     
