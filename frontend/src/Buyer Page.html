@@ -35,30 +35,41 @@
 <div class="container-fluid">
     <div class="row">
         <div id="input" class="col-sm">
-            <label for="inputForm" style="margin-top: 16px; font-weight: bold"> Decentralized Server Provider — brought to you by Lamden Smart Contracts</label>
+            <label for="input" style="margin-top: 16px; font-weight: bold"> Decentralized Server Provider — brought to you by Lamden Smart Contracts</label>
+
             <form id="inputForm">
+                <label for="inputForm">Code to Run:</label>
                 <div class="custom-file mt-3 mb-3">
-                    <!--File input here-->
                     <input type="file" class="custom-file-input" id="customFile">
                     <label class="custom-file-label" for="customFile">Choose file</label>
                 </div>
+
                 <div class="form-group">
-                    <!--Destination ip here. Maybe unnecessary?-->
-                    <label for="InputDest">Destination</label>
-                    <input type="form-control" class="form-control" id="InputDest" placeholder="IP Address">
+                    <label for="InputDest">Providers:</label>
+                    <select class="form-control" id="providers">
+                      <option>1. input here </option>
+                      <option>2. input here </option>
+                      <option>3. input here </option>
+                      <option>4. input here </option>
+                      <option>5. input here </option>
+                    </select>
                 </div>
+
                 <div class="form-group">
                     <!--Wallet id (or password?) here-->
                     <label for="InputWallet">Wallet</label>
                     <input type="form-control" class="form-control" id="InputWallet" placeholder="Wallet Key">
                 </div>
+
                 <img src="tau_logo.png" style="height: 32px; width: 32px; margin: 0px 8px;">
                 <button type="submit" class="btn btn-outline-dark buttonCost" style="font-weight: bold">
                     <!--Actual price in tau will be displayed here instead of "COST"-->
                     COST
                 </button>
+
             </form>
         </div>
+
         <div id="output" class="col-sm">
             OUTPUT HERE
         </div>
