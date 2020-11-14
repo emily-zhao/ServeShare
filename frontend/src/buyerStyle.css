@@ -1,6 +1,13 @@
-nav {
-  background-color: #736F72;
+.buttonTop {
+  transition-duration: 0.4s;
 }
+
+.buttonTop:hover {
+  background-color: #EFBDEB;
+  color: #736F72
+}
+
+
 
 body {
   background-color: #F4F1F6;
