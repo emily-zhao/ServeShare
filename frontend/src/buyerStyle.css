@@ -5,9 +5,21 @@
 }
 
 .buttonTop:hover {
-  background-color: #EFBDEB;
-  border-color: #EFBDEB;
+  background-color: #BAA5FF;
+  border-color: #BAA5FF;
   color: black;
+}
+
+.buttonCost {
+  transition-duration: 0.4s;
+  color:black;
+  background-color:white;
+}
+
+.buttonCost:hover {
+  background-color: #461BC2;
+  border-color: #461BC2;
+  color: white;
 }
 
 .navbar-custom {
