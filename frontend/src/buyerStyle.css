@@ -1,11 +1,17 @@
 .buttonTop {
   transition-duration: 0.4s;
+  color:black;
+  background-color:white;
 }
 
 .buttonTop:hover {
   background-color: #EFBDEB;
-  border-color: #EFBDEB; 
-  color: #736F72
+  border-color: #EFBDEB;
+  color: black;
+}
+
+.navbar-custom {
+    background-color: #736F72;
 }
 
 body {
