@@ -16,7 +16,7 @@ def purchase_offer(offer: str):
     "Offer price exceeds available balance."
     balances[sender] -= resource_offers[offer]['price']
     balances[offer] += resource_offers[offer]['price']
-    resource_offers['purchaser'] = sender
+    resource_offers[offer]['purchaser'] = sender
 
 @export
 def free_cash(amount: int):

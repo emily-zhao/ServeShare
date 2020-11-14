@@ -1,28 +1,31 @@
-import ContractClient from './ContractClient';
+import ResourceContractClient from './ResourceContractClient';
 
-let printfn = x => console.log(x);
+let printfn = (x, resolve) => {console.log(x); resolve()};
 
-let meClient = new ContractClient('me');
-let otherClient = new ContractClient('other');
-meClient.getAllContracts().then(printfn);
-window.contractClient = meClient;
+let meClient = new ResourceContractClient('me');
+let otherClient = new ResourceContractClient('other');
+//meClient.getAllContracts().then(printfn);
+window.meClient = meClient;
+window.otherClient = otherClient;
 
-Promise.resolve().then(
-    meClient.runTransaction('resource_contract', 'free_cash', {'amount':10}).then(printfn)
-).then(
-    meClient.getContractVariable('resource_contract', 'balances', 'me').then(printfn)
-).then(
-    otherClient.runTransaction('resource_contract','create_offer', {'price':5, 'address': '1234'}).then(printfn)
-).then(
-    otherClient.getContractVariable('resource_contract', 'balances', 'other').then(printfn)
-).then(
-    otherClient.getContractVariable('resource_contract', 'resource_offers', 'other').then(printfn)
-).then(
-    meClient.runTransaction('resource_contract', 'purchase_offer', {'offer': 'other'}).then(printfn)
-).then(
-    meClient.getContractVariable('resource_contract', 'balances', 'me').then(printfn)
-).then(
-    otherClient.getContractVariable('resource_contract', 'balances', 'other').then(printfn)
-).then(
-    otherClient.getContractVariable('resource_contract', 'resource_offers', 'other').then(printfn)
-);
+/*
+Promise.resolve().then((resolve) => {
+    meClient.addToMyBalance(5).then(printfn)
+}).then((resolve) => {
+    meClient.getMyBalance().then(printfn)
+}).then((resolve) => {
+    otherClient.getMyBalance().then(printfn)
+}).then((resolve) => {
+    otherClient.postOffer(5, 'abc').then(printfn)
+}).then((resolve) => {
+    otherClient.getMyOffer().then(printfn)
+}).then((resolve) => {
+    meClient.purchaseOffer('other').then(printfn)
+}).then((resolve) => {
+    otherClient.getMyOffer().then(printfn)
+}).then((resolve) => {
+    meClient.getMyBalance().then(printfn)
+}).then((resolve) => {
+    otherClient.getMyBalance().then(printfn)
+});
+*/
