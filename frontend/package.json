@@ -1,0 +1,25 @@
+{
+  "name": "hackohio",
+  "version": "1.0.0",
+  "description": "The webpage front-end of our lamden smart-contract.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emily-zhao/hackOhio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emily-zhao/hackOhio/issues"
+  },
+  "homepage": "https://github.com/emily-zhao/hackOhio#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^4.5.0",
+    "webpack": "^5.4.0",
+    "webpack-cli": "^4.2.0"
+  }
+}
