@@ -1,6 +1,8 @@
 from sanic import Sanic, response
 from sanic_cors import CORS
+import ast
 
+from contracting.db.encoder import encode
 from contracting.client import ContractingClient
 client = ContractingClient()
 
