@@ -30,22 +30,25 @@
 <div class="container-fluid">
     <div class="row">
         <div id="input" class="col-sm">
-            <form>
-                <div class="custom-file mt-3 mb-3">
+            <label for="inputForm" style="margin-top: 16px; font-weight: bold">STAND IN TITLE</label>
+            <form id="inputForm">
+                <div class="custom-file mt-3 mb-3">]
                     <input type="file" class="custom-file-input" id="customFile">
                     <label class="custom-file-label" for="customFile">Choose file</label>
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputPassword1">Destination</label>
-                    <input type="form-control" class="form-control" id="exampleInputPassword1" placeholder="IP Address">
+                    <label for="InputDest">Destination</label>
+                    <input type="form-control" class="form-control" id="InputDest" placeholder="IP Address">
                 </div>
-                <div class="row">
-                    <div class="col-sm" style="display: flex; align-items: center; flex-wrap: wrap">
-                        <button type="submit" class="btn btn-outline-primary">Go</button>
-                        <img src="tau_logo.png" style="height: 32px; width: 32px; margin: 0px 8px">
-                        COST
-                    </div>
+                <div class="form-group">
+                    <label for="InputWallet">Wallet</label>
+                    <input type="form-control" class="form-control" id="InputWallet" placeholder="Wallet Key">
                 </div>
+                <button type="submit" class="btn btn-outline-primary" style="font-weight: bold">
+                    <img src="tau_logo.png" style="height: 32px; width: 32px; margin-right: 8px">
+                    <!--Actual price in tau will be displayed here instead of "COST"-->
+                    COST
+                </button>
             </form>
         </div>
         <div id="output" class="col-sm">
