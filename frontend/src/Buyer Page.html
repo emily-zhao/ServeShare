@@ -12,7 +12,7 @@
 
 <!-- Garbage a$$ navbar -->
 <nav class="navbar navbar-expand-lg navbar-custom">
-    <img src="serveShare.png" style = "height: 90px; width: 260px; margin: 0px 0px">
+    <img src="serveShare.png" style = "height: 90px; width: 250px; margin: 0px 0px">
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -25,7 +25,7 @@
         TAKES OUT SEARCH BAR
         <form class="form-inline my-2 my-lg-0">
             <-input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"-->
-            <button class="btn btn-outline-dark buttonTop" type="About">About</button>
+            <button class="btn btn-outline-dark buttonTop" type="About" style = "margin: 5px">About</button>
             <button class="btn btn-outline-dark buttonTop" type="Buying" style = "margin: 5px">Buying</button>
             <button class="btn btn-outline-dark buttonTop" type = "Hosting" style = "margin: 5px">Hosting</button>
         </form>
@@ -38,21 +38,24 @@
             <label for="inputForm" style="margin-top: 16px; font-weight: bold"> Decentralized Server Provider — brought to you by Lamden Smart Contracts</label>
             <form id="inputForm">
                 <div class="custom-file mt-3 mb-3">
+                    <!--File input here-->
                     <input type="file" class="custom-file-input" id="customFile">
                     <label class="custom-file-label" for="customFile">Choose file</label>
                 </div>
                 <div class="form-group">
+                    <!--Destination ip here. Maybe unnecessary?-->
                     <label for="InputDest">Destination</label>
                     <input type="form-control" class="form-control" id="InputDest" placeholder="IP Address">
                 </div>
                 <div class="form-group">
+                    <!--Wallet id (or password?) here-->
                     <label for="InputWallet">Wallet</label>
                     <input type="form-control" class="form-control" id="InputWallet" placeholder="Wallet Key">
                 </div>
-                <button type="submit" class="btn btn-outline-primary">
-                    <img src="tau_logo.png" style="height: 32px; width: 32px; margin-right: 8px; vertical-align: middle">
+                <img src="tau_logo.png" style="height: 32px; width: 32px; margin: 0px 8px;">
+                <button type="submit" class="btn btn-outline-dark" style="font-weight: bold">
                     <!--Actual price in tau will be displayed here instead of "COST"-->
-                    <span id="cost" style="font-weight: bold; vertical-align: middle">COST</span>
+                    COST
                 </button>
             </form>
         </div>
