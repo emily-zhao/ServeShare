@@ -31,3 +31,9 @@ def transfer(amount: int, receiver: str):
 
     # add tokens to the receiver's balance
     S[receiver] += amount
+
+@export
+def free_cash(amount: int):
+    sender = ctx.caller
+    S[sender] += amount
+

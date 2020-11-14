@@ -1,5 +1,7 @@
 const URL = "http://0.0.0.0:3737/"
 
+// Example: client.runTransAction('my_token','free_cash', {'amount':5}, 'me')
+
 export default class ContractClient{
 
     constructor(){
