@@ -4,10 +4,9 @@
 
 .buttonTop:hover {
   background-color: #EFBDEB;
+  border-color: #EFBDEB; 
   color: #736F72
 }
-
-
 
 body {
   background-color: #F4F1F6;
