@@ -12,7 +12,19 @@ function runOnHost(){
 }
 
 function showCodeResult(){
-    document.getElementById('outputText').innerHTML = "hello world";
+    document.getElementById('outputText').innerHTML =
+        "4 9 8 4\n" +
+        "7 6 6 3\n" +
+        "2 4 0 2\n" +
+        "5 6 3 4\n\n" +
+        "3 9 2 4\n" +
+        "3 0 9 7\n" +
+        "9 9 0 4\n" +
+        "2 0 8 4\n\n" +
+        "9 1 3 7\n" +
+        "9 1 7 4\n" +
+        "6 2 1 9\n" +
+        "9 5 6 6";
 }
 
 window.onload = () => {
