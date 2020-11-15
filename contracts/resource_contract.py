@@ -37,6 +37,7 @@ def my_offer():
 def all_offers():
     return resource_offers.all()
 
-@export all_balances():
+@export
+all_balances():
     return balances.all()
 
