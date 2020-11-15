@@ -31,6 +31,10 @@ export default class WalletContractClient extends WalletController{
         return this.runTransaction('free_cash', {'amount': amount});
     }
     
+    subtractFromMyBalance(amount){
+        return this.runTransaction('remove_cash', {'amount': amount});
+    }
+    
     createOffer(price, address){
         return this.runTransaction('create_offer',
             {'price': price, 'address': address});
