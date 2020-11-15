@@ -23,3 +23,20 @@ def free_cash(amount: int):
     sender = ctx.caller
     balances[sender] += amount
 
+# methods for retrieving state (some are for convenience only)
+
+@export
+def my_balance():
+    return balances[ctx.caller]
+
+@export
+def my_offer():
+    return resource_offers[ctx.caller]
+
+@export
+def all_offers():
+    return resource_offers.all()
+
+@export all_balances():
+    return balances.all()
+
