@@ -7,7 +7,15 @@ resource_offers = Hash(default_value=None)
 @export
 def create_offer(price: int, address: str):
     sender = ctx.caller
-    resource_offers[sender] = {'price': price, 'address': address}
+    resource_offers[sender] = {
+        'price': price,
+        'address': address,
+        'identity': sender
+    }
+
+@export
+def remove_offer():
+    del resource_offers[sender]
 
 @export
 def purchase_offer(offer: str):

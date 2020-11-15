@@ -65,29 +65,23 @@
 
                 <div class="form-group">
                     <label for="providers">Providers:</label>
-                    <select class="form-control" id="providers">
-                      <option>1. input here </option>
-                      <option>2. input here </option>
-                      <option>3. input here </option>
-                      <option>4. input here </option>
-                      <option>5. input here </option>
+                    <select size="4" class="form-control" id="providers">
                     </select>
                 </div>
-
                 <div class="form-group">
-                    <!--Wallet id (or password?) here-->
-                    <label for="InputWallet">Wallet:</label>
-                    <input type="form-control" class="form-control" id="InputWallet" placeholder="Wallet Key">
+                    <label for="balance">Balance:</label>
+                    <pre  id="balance"></pre>
                 </div>
+                
             </form>
-            <button class="btn btn-outline-dark buttonCost" style="font-weight: bold">
+            <button class="btn btn-outline-dark buttonCost" style="font-weight: bold" id="payButton">
                 Pay
             </button>
             <img src="tau_logo.png" style="height: 32px; width: 32px; margin: 0px 8px;">
         </div>
         <div id="output" class="col-sm">
             <label for="output" style="margin-top: 16px; font-weight: bold">Code Output</label>
-            <pre id="outputText">OUTPUT HERE</pre>
+            <pre id="outputText"></pre>
         </div>
     </div>
 </div>

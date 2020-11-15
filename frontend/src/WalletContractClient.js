@@ -8,7 +8,7 @@ export default class WalletContractClient extends WalletController{
         super({
             appName: 'ServeShare',
             version: '1.0.0',
-            contractName: 'con_serveshare_contract2',
+            contractName: 'con_serveshare_contract3',
             networkType: 'testnet',
             logo: './tau_logo.png'
         });
@@ -52,6 +52,7 @@ export default class WalletContractClient extends WalletController{
                         kwargs: args,
                         stampLimit: 1000
                     }, resp => {
+                        console.log(resp);
                         if(resp.data && resp.data.resultInfo
                             && resp.data.resultInfo.returnResult){
                         
