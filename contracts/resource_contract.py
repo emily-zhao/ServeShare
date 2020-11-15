@@ -24,12 +24,27 @@ def purchase_offer(offer: str):
     "Offer price exceeds available balance."
     balances[sender] -= resource_offers[offer]['price']
     balances[offer] += resource_offers[offer]['price']
-    resource_offers[offer]['purchaser'] = sender
+    old_offer = resource_offers[offer]
+    # want to make absolutely sure the purchaser key get's added
+    new_offer = {
+        'price': old_offer['price'],
+        'address': old_offer['address'],
+        'identity': old_offer['identity'],
+        'purchaser': sender
+    }
+    resource_offers[offer] = new_offer
+
+# these methods are for changing balance and are strictly for testing
 
 @export
 def free_cash(amount: int):
     sender = ctx.caller
     balances[sender] += amount
+    
+@export
+def remove_cash(amount: int):
+    sender = ctx.caller
+    balances[sender] -= amount
 
 # methods for retrieving state (some are for convenience only)
 

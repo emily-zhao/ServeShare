@@ -8,7 +8,7 @@ export default class WalletContractClient extends WalletController{
         super({
             appName: 'ServeShare',
             version: '1.0.0',
-            contractName: 'con_serveshare_contract3',
+            contractName: 'con_serveshare_contract4',
             networkType: 'testnet',
             logo: './tau_logo.png'
         });
