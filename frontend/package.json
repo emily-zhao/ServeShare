@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/emily-zhao/hackOhio#readme",
   "devDependencies": {
+    "copy-webpack-plugin": "^6.3.1",
     "html-webpack-plugin": "^4.5.0",
     "lamden_wallet_controller": "^0.6.1",
     "lamden-js": "^1.21.0",

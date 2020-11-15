@@ -1,4 +1,5 @@
 import WalletContractClient from './WalletContractClient';
+
 //import WalletController from 'lamden_wallet_controller';
 /*
 window.onload = () => {

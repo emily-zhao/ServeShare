@@ -1,4 +1,4 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   entry: __dirname + '/src/index.js',
@@ -7,7 +7,13 @@ module.exports = {
     filename: 'index_bundle.js'
   },
   plugins: [
-    new HtmlWebpackPlugin()
+    new CopyPlugin({
+        patterns: [
+            { from: 'src/*.html', to: '', flatten:true },
+            { from: 'src/*.png', to: '', flatten:true},
+            { from: 'src/*.css', to: '', flatten:true},
+        ]
+    })
   ],
   optimization: {
     minimize: false
