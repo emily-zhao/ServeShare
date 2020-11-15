@@ -10,7 +10,7 @@ export default class WalletContractClient extends WalletController{
             version: '1.0.0',
             contractName: 'con_serveshare_contract4',
             networkType: 'testnet',
-            logo: './tau_logo.png'
+            logo: './favicon-32x32.png'
         });
         this.connected = this.walletIsInstalled();
     }
