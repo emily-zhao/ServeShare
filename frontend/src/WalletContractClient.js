@@ -51,7 +51,15 @@ export default class WalletContractClient extends WalletController{
                         methodName: method,
                         kwargs: args,
                         stampLimit: 1000
-                    }, resolve);
+                    }, resp => {
+                        if(resp.data && resp.data.resultInfo
+                            && resp.data.resultInfo.returnResult){
+                        
+                            resolve(resp.data.resultInfo.returnResult);
+                        }else{
+                            resolve(resp);
+                        }
+                    });
                 }else{
                     reject('not connected to wallet');
                 }
