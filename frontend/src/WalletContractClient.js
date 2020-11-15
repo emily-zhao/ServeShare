@@ -8,11 +8,23 @@ export default class WalletContractClient extends WalletController{
         super({
             appName: 'ServeShare',
             version: '1.0.0',
-            contractName: 'con_serveshare_contract',
+            contractName: 'con_serveshare_contract2',
             networkType: 'testnet',
             logo: './tau_logo.png'
         });
         this.connected = this.walletIsInstalled();
+    }
+    
+    getMyBalance(){
+        return this.runTransaction('my_balance', {});
+    }
+    
+    getMyOffer(){
+        return this.runTransaction('my_offer', {});
+    }
+    
+    getAllOffers(){
+        return this.runTransaction('all_offers', {});
     }
     
     addToMyBalance(amount){
