@@ -38,6 +38,6 @@ def all_offers():
     return resource_offers.all()
 
 @export
-all_balances():
+def all_balances():
     return balances.all()
 
