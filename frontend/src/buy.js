@@ -6,6 +6,11 @@ function showMyBalance(client){
     });
 }
 
+function runOnHost(){
+    document.getElementById('outputText').innerHTML = "running on host...";
+    window.setTimeout(showCodeResult, 2000);
+}
+
 function showCodeResult(){
     document.getElementById('outputText').innerHTML = "hello world";
 }
@@ -39,7 +44,7 @@ window.onload = () => {
         contractClient.purchaseOffer(chosen).then(() => {
             showMyBalance(contractClient);
             outputText.innerHTML = "transaction complete...\n sending code to host"
-            window.setTimeout(showCodeResult, 1000);
+            window.setTimeout(runOnHost, 1000);
         });
     }
 };
