@@ -49,3 +49,9 @@ h1 {
   color:white;
   text-align: left;
 }
+
+#developerBlurbs th, td {
+    border: 0;
+    width: 25%;
+    text-align: center;
+}
