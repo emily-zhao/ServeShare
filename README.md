@@ -16,4 +16,9 @@ A hoster can post a transaction to set a price for their service, the address th
 
 We entered this hackathon, interested in learning more about fields of computer science that our classes had not previously looked into. We were excited to find the Lamden challenge asked us to use blockchain technologies and smart contracts. Thanks to this challenge, we were able to become fully immersed in the finer workings of smart contracts. This hackathon experience has been truly great because this challenge really tested our limits in what we can achieve!
 
-
+**PLEASE READ!**
+Official contributor list since GitHub won't recognize one of our members:
+Maximilian Evans
+Emily Zhao
+Valerie Jarvis
+Ian Wu
