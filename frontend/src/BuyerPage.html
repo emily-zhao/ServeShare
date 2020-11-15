@@ -56,7 +56,7 @@
         <div id="input" class="col-sm">
             <label for="input" style="margin-top: 16px; font-weight: bold"> Decentralized Server Provider — brought to you by Lamden Wallet</label>
 
-            <form id="inputForm">        
+            <form id="inputForm">
                 <label for="inputForm">Code to Run:</label>
                 <div class="custom-file mt-3 mb-3">
                     <input type="file" class="custom-file-input" id="customFile">
@@ -73,21 +73,20 @@
                       <option>5. Input here </option>
                     </select>
                 </div>
-
                 <div class="form-group">
-                    <!--Wallet id (or password?) here-->
-                    <label for="InputWallet">Wallet:</label>
-                    <input type="form-control" class="form-control" id="InputWallet" placeholder="Wallet Key">
+                    <label for="balance">Balance:</label>
+                    <pre  id="balance"></pre>
                 </div>
+
             </form>
-            <button class="btn btn-outline-dark buttonCost" style="font-weight: bold">
+            <button class="btn btn-outline-dark buttonCost" style="font-weight: bold" id="payButton">
                 Pay
             </button>
             <img src="tau_logo.png" style="height: 32px; width: 32px; margin: 0px 8px;">
         </div>
         <div id="output" class="col-sm">
             <label for="output" style="margin-top: 16px; font-weight: bold">Code Output</label>
-            <pre id="outputText">OUTPUT HERE</pre>
+            <pre id="outputText"></pre>
         </div>
     </div>
 </div>
