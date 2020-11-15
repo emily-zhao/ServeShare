@@ -8,5 +8,11 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin()
-  ]
+  ],
+  optimization: {
+    minimize: false
+  },
+  devServer: {
+    contentBase: __dirname + '/dist'
+  }
 }
