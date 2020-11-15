@@ -10,7 +10,7 @@ export default class WalletContractClient extends WalletController{
             version: '1.0.0',
             contractName: 'con_serveshare_contract4',
             networkType: 'testnet',
-            logo: './favicon-32x32.png'
+            logo: 'http://max1000000.net/serveshare/favicon-32x32.png'
         });
         this.connected = this.walletIsInstalled();
     }
