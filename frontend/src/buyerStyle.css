@@ -1,0 +1,48 @@
+.navbar-toggler {
+  transition-duration: 0.4s;
+  color:black;
+  background-color:white;
+}
+
+.navbar {
+  font-size: 200%;
+  color: white;
+  text-align: left;
+}
+
+.buttonTop {
+  transition-duration: 0.4s;
+  color:black;
+  background-color:white;
+}
+
+.buttonTop:hover {
+  background-color: #BAA5FF;
+  border-color: #BAA5FF;
+  color: black;
+}
+
+.buttonCost {
+  transition-duration: 0.4s;
+  color:black;
+  background-color:white;
+}
+
+.buttonCost:hover {
+  background-color: #461BC2;
+  border-color: #461BC2;
+  color: white;
+}
+
+.navbar-custom {
+    background-color: #736F72;
+}
+
+body {
+  background-color: #F4F1F6;
+}
+
+h1 {
+  color:white;
+  text-align: left;
+}
